@@ -1,12 +1,14 @@
-#library(shinyAce)
-a<-vector('list',6)
+library(shinyAce)
+library(shiny)
+
+a<-vector('list',1)
 shinyApp(
   ui = bootstrapPage(
     # a div named mydiv
     # tags$div(id="mydiv", style="width: 50px; height :50px;
     #        left: 100px; top: 100px;
     #        background-color: gray; position: absolute"),
-    actionButton('mydiv','button'),
+    actionButton(inputId = 'mydiv',label = 'button'),
     sliderInput('sl','slider',min = 0,max = 100,value = 50),
     conditionalPanel('input.sl<50',
                      uiOutput("results")),
@@ -22,17 +24,22 @@ document.getElementById("mydiv").onclick = function() {
   ),
   server = function(input, output,session) {
     output$results<-renderUI({
-      aceEditor(outputId = "toace",
-                value=input$mydata,
-                mode = "r", 
-                theme = "chrome", 
-                height = "100px",
-                fontSize = 12)      
+      textInput('toace','val',input$mydata)
     })
 
     
-    observeEvent(input$mydiv,{
+    observeEvent(input$outerHTML,{
       a[[input$mydiv]]<<-input$outerHTML
     })
   }
 )
+
+
+library(rvest)
+read_html(a[[1]])%>%html_nodes(xpath = "//div[contains(@class, 'shiny')]")
+
+
+a1%>%html_nodes(xpath = '//*[(@id = "mydiv")]')
+
+
+a2[[1]]%>%html_text()
