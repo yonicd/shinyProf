@@ -1,0 +1,23 @@
+{
+  "name": "shinyprof",
+  "version": "1.0.0",
+  "description": "himalaya",
+  "main": "index.js",
+  "dependencies": {
+    "himalaya": "^0.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node echo \"<h1>\"Hello</h1> | himalaya > hello.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonicd/shinyProf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonicd/shinyProf/issues"
+  },
+  "homepage": "https://github.com/yonicd/shinyProf#readme"
+}

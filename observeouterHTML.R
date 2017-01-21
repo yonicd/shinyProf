@@ -16,7 +16,7 @@ shinyApp(
 document.getElementById("mydiv").onclick = function() {
       var number = Math.random();
       Shiny.onInputChange("mydata", number);
-      var markup=document.documentElement.outerHTML;
+      var markup=document.body.outerHTML;
       Shiny.onInputChange("outerHTML",markup);
 };
   ')
@@ -35,11 +35,6 @@ document.getElementById("mydiv").onclick = function() {
 )
 
 
-library(rvest)
-read_html(a[[1]])%>%html_nodes(xpath = "//div[contains(@class, 'shiny')]")
-
-
-a1%>%html_nodes(xpath = '//*[(@id = "mydiv")]')
-
-
-a2[[1]]%>%html_text()
+system('node ./node_modules/himalaya/bin/himalaya test.html test.json')
+b=jsonlite::read_json('test.json')
+listviewer::jsonedit(b)
