@@ -16,7 +16,7 @@ shinyApp(
 document.getElementById("mydiv").onclick = function() {
       var number = Math.random();
       Shiny.onInputChange("mydata", number);
-      var markup=document.documentElement.outerHTML;
+      var markup=document.body.outerHTML;
       Shiny.onInputChange("outerHTML",markup);
 };
   ')
