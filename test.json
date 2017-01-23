@@ -1,0 +1,1081 @@
+[
+  {
+    "tagName": "body",
+    "attributes": {},
+    "children": [
+      {
+        "type": "Text",
+        "content": "\r\n  "
+      },
+      {
+        "tagName": "button",
+        "attributes": {
+          "id": "mydiv",
+          "type": "button",
+          "className": [
+            "btn",
+            "btn-default",
+            "action-button",
+            "shiny-bound-input"
+          ]
+        },
+        "children": [
+          {
+            "type": "Text",
+            "content": "button"
+          }
+        ],
+        "type": "Element"
+      },
+      {
+        "type": "Text",
+        "content": "\r\n  "
+      },
+      {
+        "tagName": "div",
+        "attributes": {
+          "className": [
+            "form-group",
+            "shiny-input-container"
+          ]
+        },
+        "children": [
+          {
+            "type": "Text",
+            "content": "\r\n    "
+          },
+          {
+            "tagName": "label",
+            "attributes": {
+              "className": [
+                "control-label"
+              ],
+              "for": "sl"
+            },
+            "children": [
+              {
+                "type": "Text",
+                "content": "slider"
+              }
+            ],
+            "type": "Element"
+          },
+          {
+            "type": "Text",
+            "content": "\r\n    "
+          },
+          {
+            "tagName": "span",
+            "attributes": {
+              "className": [
+                "irs",
+                "js-irs-0",
+                "irs-with-grid"
+              ]
+            },
+            "children": [
+              {
+                "tagName": "span",
+                "attributes": {
+                  "className": [
+                    "irs"
+                  ]
+                },
+                "children": [
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-line"
+                      ],
+                      "tabindex": -1
+                    },
+                    "children": [
+                      {
+                        "tagName": "span",
+                        "attributes": {
+                          "className": [
+                            "irs-line-left"
+                          ]
+                        },
+                        "children": [],
+                        "type": "Element"
+                      },
+                      {
+                        "tagName": "span",
+                        "attributes": {
+                          "className": [
+                            "irs-line-mid"
+                          ]
+                        },
+                        "children": [],
+                        "type": "Element"
+                      },
+                      {
+                        "tagName": "span",
+                        "attributes": {
+                          "className": [
+                            "irs-line-right"
+                          ]
+                        },
+                        "children": [],
+                        "type": "Element"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-min"
+                      ],
+                      "style": {
+                        "visibility": "visible"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "0"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-max"
+                      ],
+                      "style": {
+                        "visibility": "visible"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "100"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-from"
+                      ],
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "0"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-to"
+                      ],
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "0"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-single"
+                      ],
+                      "style": {
+                        "left": "75.726666667%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "81"
+                      }
+                    ],
+                    "type": "Element"
+                  }
+                ],
+                "type": "Element"
+              },
+              {
+                "tagName": "span",
+                "attributes": {
+                  "className": [
+                    "irs-grid"
+                  ],
+                  "style": {
+                    "width": "92.666666667%",
+                    "left": "3.566666666%"
+                  }
+                },
+                "children": [
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "0%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-0"
+                      ],
+                      "style": {
+                        "left": "0%",
+                        "marginLeft": "-1.833333333%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "0"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "6.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "3.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "10%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-1"
+                      ],
+                      "style": {
+                        "left": "10%",
+                        "visibility": "visible",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "10"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "16.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "13.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "20%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-2"
+                      ],
+                      "style": {
+                        "left": "20%",
+                        "visibility": "visible",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "20"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "26.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "23.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "30%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-3"
+                      ],
+                      "style": {
+                        "left": "30%",
+                        "visibility": "visible",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "30"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "36.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "33.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "40%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-4"
+                      ],
+                      "style": {
+                        "left": "40%",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "40"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "46.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "43.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "50%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-5"
+                      ],
+                      "style": {
+                        "left": "50%",
+                        "visibility": "visible",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "50"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "56.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "53.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "60%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-6"
+                      ],
+                      "style": {
+                        "left": "60%",
+                        "visibility": "visible",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "60"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "66.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "63.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "70%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-7"
+                      ],
+                      "style": {
+                        "left": "70%",
+                        "visibility": "visible",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "70"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "76.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "73.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "80%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-8"
+                      ],
+                      "style": {
+                        "left": "80%",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "80"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "86.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "83.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "90%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-9"
+                      ],
+                      "style": {
+                        "left": "90%",
+                        "visibility": "visible",
+                        "marginLeft": "-2.666666666%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "90"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "96.666666667%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol",
+                        "small"
+                      ],
+                      "style": {
+                        "left": "93.333333333%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-pol"
+                      ],
+                      "style": {
+                        "left": "100%"
+                      }
+                    },
+                    "children": [],
+                    "type": "Element"
+                  },
+                  {
+                    "tagName": "span",
+                    "attributes": {
+                      "className": [
+                        "irs-grid-text",
+                        "js-grid-text-10"
+                      ],
+                      "style": {
+                        "left": "100%",
+                        "visibility": "visible",
+                        "marginLeft": "-3.5%"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "100"
+                      }
+                    ],
+                    "type": "Element"
+                  }
+                ],
+                "type": "Element"
+              },
+              {
+                "tagName": "span",
+                "attributes": {
+                  "className": [
+                    "irs-bar"
+                  ],
+                  "style": {
+                    "cursor": "ew-resize",
+                    "left": "3.6666666665%",
+                    "width": "75.06000000027001%"
+                  }
+                },
+                "children": [],
+                "type": "Element"
+              },
+              {
+                "tagName": "span",
+                "attributes": {
+                  "className": [
+                    "irs-bar-edge"
+                  ]
+                },
+                "children": [],
+                "type": "Element"
+              },
+              {
+                "tagName": "span",
+                "attributes": {
+                  "className": [
+                    "irs-shadow",
+                    "shadow-single"
+                  ],
+                  "style": {
+                    "display": "none"
+                  }
+                },
+                "children": [],
+                "type": "Element"
+              },
+              {
+                "tagName": "span",
+                "attributes": {
+                  "className": [
+                    "irs-slider",
+                    "single"
+                  ],
+                  "style": {
+                    "left": "75.06000000027001%"
+                  }
+                },
+                "children": [],
+                "type": "Element"
+              }
+            ],
+            "type": "Element"
+          },
+          {
+            "tagName": "input",
+            "attributes": {
+              "className": [
+                "js-range-slider",
+                "irs-hidden-input",
+                "shiny-bound-input"
+              ],
+              "id": "sl",
+              "dataset": {
+                "min": 0,
+                "max": 100,
+                "from": 50,
+                "step": 1,
+                "grid": "true",
+                "gridNum": 10,
+                "gridSnap": "false",
+                "keyboard": "true",
+                "keyboardStep": 1,
+                "dragInterval": "true",
+                "dataType": "number",
+                "prettifySeparator": ","
+              },
+              "readonly": 0
+            },
+            "type": "Element"
+          },
+          {
+            "type": "Text",
+            "content": "\r\n  "
+          }
+        ],
+        "type": "Element"
+      },
+      {
+        "type": "Text",
+        "content": "\r\n  "
+      },
+      {
+        "tagName": "div",
+        "attributes": {
+          "dataset": {
+            "displayIf": "input.sl&lt;50"
+          },
+          "style": {
+            "display": "none"
+          }
+        },
+        "children": [
+          {
+            "type": "Text",
+            "content": "\r\n    "
+          },
+          {
+            "tagName": "div",
+            "attributes": {
+              "id": "results",
+              "className": [
+                "shiny-html-output",
+                "shiny-bound-output"
+              ]
+            },
+            "children": [
+              {
+                "tagName": "div",
+                "attributes": {
+                  "className": [
+                    "form-group",
+                    "shiny-input-container"
+                  ]
+                },
+                "children": [
+                  {
+                    "type": "Text",
+                    "content": "\r\n  "
+                  },
+                  {
+                    "tagName": "label",
+                    "attributes": {
+                      "for": "toace"
+                    },
+                    "children": [
+                      {
+                        "type": "Text",
+                        "content": "val"
+                      }
+                    ],
+                    "type": "Element"
+                  },
+                  {
+                    "type": "Text",
+                    "content": "\r\n  "
+                  },
+                  {
+                    "tagName": "input",
+                    "attributes": {
+                      "id": "toace",
+                      "type": "text",
+                      "className": [
+                        "form-control",
+                        "shiny-bound-input"
+                      ]
+                    },
+                    "type": "Element"
+                  },
+                  {
+                    "type": "Text",
+                    "content": "\r\n"
+                  }
+                ],
+                "type": "Element"
+              }
+            ],
+            "type": "Element"
+          },
+          {
+            "type": "Text",
+            "content": "\r\n  "
+          }
+        ],
+        "type": "Element"
+      },
+      {
+        "type": "Text",
+        "content": "\r\n  "
+      },
+      {
+        "tagName": "script",
+        "attributes": {},
+        "content": "\r\ndocument.getElementById(\"mydiv\").onclick = function() {\r\n      var number = Math.random();\r\n      Shiny.onInputChange(\"mydata\", number);\r\n      var markup=document.body.outerHTML;\r\n      Shiny.onInputChange(\"outerHTML\",markup);\r\n};\r\n  ",
+        "type": "Element"
+      },
+      {
+        "type": "Text",
+        "content": "\r\n\r\n\r\n\r\n"
+      }
+    ],
+    "type": "Element"
+  }
+]
