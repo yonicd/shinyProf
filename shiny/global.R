@@ -1,4 +1,4 @@
-library(ggnet)
+library(igraph)
 library(zoo)
 library(reshape2)
 library(dplyr)
