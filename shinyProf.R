@@ -87,30 +87,48 @@ GS.net$ctx[1]=1
 GS.net$ctx=na.locf(GS.net$ctx)
 GS.net$o=1
 
+GS2net=function(df,low,high,ctxf){
+df=df[df$timef>=low&df$timef<=high,]
+#browser()
+df.mat=df[df$ctx%in%ctxf,]%>%dcast(ctx+label~dependsOn,value.var='o')
+row.names(df.mat)=df.mat[,2]
+df.mat[,-c(1,2,8)]%>%as.matrix
+}
 
-GS.mat=GS.net[GS.net$ctx==5,]%>%dcast(ctx+label~dependsOn,value.var='o')
-row.names(GS.mat)=GS.mat[,2]
-GS.mat=GS.mat[,-c(1,2,8)]%>%as.matrix
-
-network(GS.mat, directed = TRUE)%>%
-  ggnet2(.,label=T,arrow.size = 12, arrow.gap = 0.025)
+network(GS.mat, directed = TRUE)%>%ggnet2(.,label=T,arrow.size = 12, arrow.gap = 0.025)
 
 serverGS <- function(input, output) {
+  
   output$timeSlide=renderUI({sliderInput(inputId = 'timeSlide',label = 'Time',
                                          min=min(GS.net$timef),
                                          max = max(GS.net$timef),
                                          value = range(GS.net$timef),
                                          dragRange = T,ticks = F,timeFormat = '%T:%L')})
   
-  output$net<-renderPlot({
-    ggnet2(net)
+  GS.mat=eventReactive(input$timeSlide,{
+    ctx.in=5
+    if(!is.null(input$ctx)) ctx.in=input$ctx
+    GS2net(df = GS.net,low = input$timeSlide[1],high = input$timeSlide[2],ctxf = ctx.in)
+  })
+  
+  observeEvent(input$timeSlide,{
+    
+    output$selCtx<-selectInput(inputId = 'ctx',
+                               label = 'Select event num',
+                               choices = unique(GS.mat()$ctx),
+                               selected = unique(GS.mat()$ctx)[1])
+    
+    output$net<-renderPlot({
+      network(GS.mat(), directed = TRUE)%>%ggnet2(.,label=T)
+    })
   })
 }
 
 uiGS <- fluidPage(
   sidebarLayout(
     sidebarPanel(
-      uiOutput('timeSlide')
+      uiOutput('timeSlide'),
+      uiOutput('selCtx')
     ),
     mainPanel(
       plotOutput('net')

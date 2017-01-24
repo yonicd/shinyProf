@@ -5,7 +5,7 @@
     "children": [
       {
         "type": "Text",
-        "content": "\r\n  "
+        "content": "\n  "
       },
       {
         "tagName": "button",
@@ -29,7 +29,7 @@
       },
       {
         "type": "Text",
-        "content": "\r\n  "
+        "content": "\n  "
       },
       {
         "tagName": "div",
@@ -42,7 +42,7 @@
         "children": [
           {
             "type": "Text",
-            "content": "\r\n    "
+            "content": "\n    "
           },
           {
             "tagName": "label",
@@ -62,7 +62,7 @@
           },
           {
             "type": "Text",
-            "content": "\r\n    "
+            "content": "\n    "
           },
           {
             "tagName": "span",
@@ -203,13 +203,13 @@
                         "irs-single"
                       ],
                       "style": {
-                        "left": "75.726666667%"
+                        "left": "47%"
                       }
                     },
                     "children": [
                       {
                         "type": "Text",
-                        "content": "81"
+                        "content": "50"
                       }
                     ],
                     "type": "Element"
@@ -892,7 +892,7 @@
                   "style": {
                     "cursor": "ew-resize",
                     "left": "3.6666666665%",
-                    "width": "75.06000000027001%"
+                    "width": "46.3333333335%"
                   }
                 },
                 "children": [],
@@ -930,7 +930,7 @@
                     "single"
                   ],
                   "style": {
-                    "left": "75.06000000027001%"
+                    "left": "46.3333333335%"
                   }
                 },
                 "children": [],
@@ -968,14 +968,14 @@
           },
           {
             "type": "Text",
-            "content": "\r\n  "
+            "content": "\n  "
           }
         ],
         "type": "Element"
       },
       {
         "type": "Text",
-        "content": "\r\n  "
+        "content": "\n  "
       },
       {
         "tagName": "div",
@@ -990,7 +990,7 @@
         "children": [
           {
             "type": "Text",
-            "content": "\r\n    "
+            "content": "\n    "
           },
           {
             "tagName": "div",
@@ -1013,7 +1013,7 @@
                 "children": [
                   {
                     "type": "Text",
-                    "content": "\r\n  "
+                    "content": "\n  "
                   },
                   {
                     "tagName": "label",
@@ -1030,7 +1030,7 @@
                   },
                   {
                     "type": "Text",
-                    "content": "\r\n  "
+                    "content": "\n  "
                   },
                   {
                     "tagName": "input",
@@ -1046,7 +1046,7 @@
                   },
                   {
                     "type": "Text",
-                    "content": "\r\n"
+                    "content": "\n"
                   }
                 ],
                 "type": "Element"
@@ -1056,24 +1056,24 @@
           },
           {
             "type": "Text",
-            "content": "\r\n  "
+            "content": "\n  "
           }
         ],
         "type": "Element"
       },
       {
         "type": "Text",
-        "content": "\r\n  "
+        "content": "\n  "
       },
       {
         "tagName": "script",
         "attributes": {},
-        "content": "\r\ndocument.getElementById(\"mydiv\").onclick = function() {\r\n      var number = Math.random();\r\n      Shiny.onInputChange(\"mydata\", number);\r\n      var markup=document.body.outerHTML;\r\n      Shiny.onInputChange(\"outerHTML\",markup);\r\n};\r\n  ",
+        "content": "\n      document.getElementById(\"mydiv\").onclick = function() {\n              var number = Math.random();\n              Shiny.onInputChange(\"mydata\", number);\n              var markup=document.body.outerHTML;\n              Shiny.onInputChange(\"outerHTML\",markup);\n              };\n    ",
         "type": "Element"
       },
       {
         "type": "Text",
-        "content": "\r\n\r\n\r\n\r\n"
+        "content": "\n\n\n\n"
       }
     ],
     "type": "Element"
