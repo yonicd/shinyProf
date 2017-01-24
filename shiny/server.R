@@ -13,6 +13,10 @@ shinyServer(function(input, output, session) {
     if(!is.null(input$sessionId)) sIdx=input$sessionId
     df=GS.net[GS.net$session==sIdx,]
     
+    x=c(input$inList,input$outList)
+    #browser()
+    if(!is.null(x)) df=df[df$label%in%x,]
+    
     selectInput(inputId = 'ctx',
                 label = 'Select event num',
                 choices = unique(df$ctx),
@@ -20,7 +24,6 @@ shinyServer(function(input, output, session) {
   })
   
 
-  
   output$timeSlideUI=renderUI({
     sIdx=GS.net$session[1]
     if(!is.null(input$sessionId)) sIdx=input$sessionId
