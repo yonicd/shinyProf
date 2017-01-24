@@ -5,4 +5,5 @@ library(dplyr)
 library(RColorBrewer)
 
 load('GS.rda')
-GS.net$timeid=1:nrow(GS.net)
+source('convertStack.R')
+#to load from real run: GS.net=convertStack(shiny:::.graphStack$as_list())

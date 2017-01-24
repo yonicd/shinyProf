@@ -1,9 +1,33 @@
 shinyServer(function(input, output, session) {
   
+  output$sessionId<-renderUI({
+    selectInput(inputId = 'sessionId',
+                label = 'Select Session',
+                choices = unique(GS.net$session),
+                selected = unique(GS.net$session)[1])
+  })
+  
+  output$selCtx<-renderUI({
+    
+    sIdx=GS.net$session[1]
+    if(!is.null(input$sessionId)) sIdx=input$sessionId
+    df=GS.net[GS.net$session==sIdx,]
+    
+    selectInput(inputId = 'ctx',
+                label = 'Select event num',
+                choices = unique(df$ctx),
+                selected = unique(df$ctx)[1])
+  })
+  
+
+  
   output$timeSlideUI=renderUI({
+    sIdx=GS.net$session[1]
+    if(!is.null(input$sessionId)) sIdx=input$sessionId
+    df=GS.net[GS.net$session==sIdx,]
     ctxIdx=1
     if(!is.null(input$ctx)) ctxIdx=as.numeric(input$ctx)
-    df=GS.net[GS.net$ctx==ctxIdx,]
+    df=df[df$ctx==ctxIdx,]
     sliderInput(inputId = 'timeSlide',label = 'Time',
                                          min=min(df$timeid),
                                          max = max(df$timeid),
@@ -47,13 +71,7 @@ shinyServer(function(input, output, session) {
     
   })
  
-  output$selCtx<-renderUI({
-    selectInput(inputId = 'ctx',
-                label = 'Select event num',
-                choices = unique(GS.net$ctx),
-                selected = unique(GS.net$ctx)[1])
-  })
-  
+
   output$action<-renderText({
     ctxIdx=1
     if(!is.null(input$ctx)) ctxIdx=input$ctx
