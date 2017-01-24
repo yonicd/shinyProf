@@ -17,7 +17,7 @@ shinyUI(
         verbatimTextOutput('action')
       ),
       mainPanel(
-        plotOutput('net')
+        plotOutput('net',height = '600px')
       )
     )
   )

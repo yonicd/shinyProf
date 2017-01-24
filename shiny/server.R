@@ -34,7 +34,7 @@ shinyServer(function(input, output, session) {
     sliderInput(inputId = 'timeSlide',label = 'Time',
                                          min=min(df$timeid),
                                          max = max(df$timeid),
-                                         value = c(min(df$timeid),min(df$timeid)+1),
+                                         value = c(min(df$timeid),min(df$timeid)+2),
                                          step = 1,
                                          dragRange = T,
                                          animate=TRUE
