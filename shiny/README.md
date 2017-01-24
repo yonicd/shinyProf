@@ -5,7 +5,7 @@
   - Instead of opening the output in the browser, now you can navigate the output inside a shiny app with controls over
   
     - choosing among different sessions
-    - selecting which input and output obects you see
+    - selecting which input and output objects you see
     - selecting which reactive events to view
     - seek specific actions in the reactive event chosen using a slider.
     - animate changes to the reactive network with slider animation.
